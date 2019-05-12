@@ -17,3 +17,11 @@ h1{
   text-transform: uppercase;
   text-shadow: 3px 0 grey;
 }
+.topic{
+  font-size: 18px;
+  font-weight: bold;
+}
+footer{
+  margin-top: 10%;
+  text-align: center;
+}
