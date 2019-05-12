@@ -26,3 +26,8 @@ function roll() {
     }
   }
 }
+function roll2() {
+  var dice2 = Math.floor(Math.random() * 6) + 1;
+  var score = document.getElementById("score2").innerHTML = dice2;
+  var newScore = initScore += dice2;
+  document.getElementById("roll2").innerHTML = newScore;
