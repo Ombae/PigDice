@@ -31,3 +31,18 @@ function roll2() {
   var score = document.getElementById("score2").innerHTML = dice2;
   var newScore = initScore += dice2;
   document.getElementById("roll2").innerHTML = newScore;
+  if (newScore >= 100) {
+    $(document).ready(function() {
+      $("#player2").fadeOut(2000);
+      $("#win2").slideDown(2000);
+    })
+  } else {
+    if (dice2 == 1) {
+      $(document).ready(function() {
+        $("#player2").fadeOut(2000);
+        $("#alert2").fadeIn();
+      })
+    } else {
+      document.getElementById("roll2").innerHTML = newScore;
+    }
+  }
