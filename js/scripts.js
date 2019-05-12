@@ -26,6 +26,8 @@ function roll() {
     }
   }
 }
+
+
 function roll2() {
   var dice2 = Math.floor(Math.random() * 6) + 1;
   var score = document.getElementById("score2").innerHTML = dice2;
@@ -47,6 +49,7 @@ function roll2() {
     }
   }
 }
+
 function start() {
   location.reload();
 };

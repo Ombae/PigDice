@@ -1,6 +1,9 @@
 body{
   font-family: 'Playfair Display', serif;
 }
+.text-danger{
+  text-shadow: 2px 0 grey;
+}
 #instructions,#total,#total2,#player2,#alert1,#alert2,#win1,#win2,#throw1,#throw2{
   display: none;
 }

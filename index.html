@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery-3.4.1.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-    <h1 class="text-danger">WELCOME TO PIG-DICE</h1>
-    <a href="#" id="start">START GAME</a> <br>
+  <div class="container">
+    <h1 class="text-danger">WELCOME TO PIG DICE</h1>
+    <a href="#" id="start">REFRESH</a> <br>
     <a href="#" id="instruct">INSTRUCTIONS</a>
     <div class=" panel panel-primary" id="instructions">
       <div class="panel-heading">
@@ -21,12 +21,11 @@
       </div>
       <div class="panel-body">
         <ul>
-          <li>This game has two players,Choose either player1 or player2.</li>
-          <li>Each player rolls the dice three times in one round.</li>
+          <li>The game has two players,player 1 and player 2.Kindly choose the player you want to be.</li>
+          <li>Each player only gets to roll the dice for three times in one round.</li>
           <li>The rolled dice numbers are recorded and the numbers rolled showed beside the dice. </li>
-          <li>The player's cummulative score is shown.If a player chooses to hold their score it,
-            is stored and added to consecutive dice rolls. </li>
-          <li>The first player to reach a hundred cummulative points is THE WINNER!</li>
+          <li>The cummulative scores are shown in an input field at the end.If a player chooses to hold their score it, is stored and added to consecutive dice rolls. </li>
+          <li>The first player to reach a hundred cummulative points wins the game.</li>
         </ul>
       </div>
     </div>
@@ -71,16 +70,16 @@
       </div>
     </div>
     <div class="alert alert-warning" role="alert" id="alert1">
-      <h2>SORRY BUT YOU HAVE LOST.</h2>
-      <button type="button" name="button" class="btn btn-danger" id="pass1">PASS MOUSE TO PLAYER 2</button>
+      <h2>YOU HAVE LOST!</h2>
+      <button type="button" name="button" class="btn btn-danger" id="pass1">PLAYER 2 TURN</button>
     </div>
     <div class="alert alert-warning alert-dismissable" role="alert" id="alert2">
       <h2>SORRY BUT YOU HAVE LOST.</h2>
-      <button type="button" name="button" class="btn btn-danger" id="pass2">PASS MOUSE TO PLAYER 1</button>
+      <button type="button" name="button" class="btn btn-danger" id="pass2">PLAYER 1 TURN</button>
     </div>
     <div class="panel panel-primary" id="win1">
       <div class="panel-heading">
-        <h3>CONGRATULATIONS PLAYER 1 WON THE GAME</h3>
+        <h3>CONGRATULATIONS!! PLAYER 1 WON!!</h3>
       </div>
       <div class="panel-body">
         <img src="https://media.giphy.com/media/3o6fJ1BM7R2EBRDnxK/giphy.gif" alt="congrats gif">
@@ -89,14 +88,14 @@
     </div>
     <div class="panel panel-primary" id="win2">
       <div class="panel-heading">
-        <h3>CONGRATULATIONS PLAYER 2 WON THE GAME</h3>
+        <h3>CONGRATULATIONS!! PLAYER 2 WON!!</h3>
       </div>
       <div class="panel-body">
         <img src="https://media.giphy.com/media/3o6fJ1BM7R2EBRDnxK/giphy.gif" alt="congrats gif">
         <button type="button" name="button" class="btn btn-primary" id="restart" value="reload">RESTART GAME</button>
       </div>
     </div>
-  </body>
+</body>
   <footer>
     Designed by <strong>Seth Ombae</strong> &copy2019.
   </footer>
