@@ -13,19 +13,89 @@
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to Pig Dice</h1>
-      <div class="col-sm-6">
-        <p class="topic">Player 1</p>
-        <img src="images/six.png" class="img1" alt="player 1 image">
-
+    <h1 class="text-danger">WELCOME TO PIG-DICE</h1>
+    <a href="#" id="start">START GAME</a> <br>
+    <a href="#" id="instruct">INSTRUCTIONS</a>
+    <div class=" panel panel-primary" id="instructions">
+      <div class="panel-heading">
+        <h2>INSTRUCTIONS</h2>
       </div>
-
-      <div class="col-sm-6">
-        <p class="topic">Player 2</p>
-        <img src="images/five.png" class="img1" alt="player 2 image">
-
+      <div class="panel-body">
+        <ul>
+          <li>This game has two players,Choose either player1 or player2.</li>
+          <li>Each player rolls the dice three times in one round.</li>
+          <li>The rolled dice numbers are recorded and the numbers rolled showed beside the dice. </li>
+          <li>The player's cummulative score is shown.If a player chooses to hold their score it,
+            is stored and added to consecutive dice rolls. </li>
+          <li>The first player to reach a hundred cummulative points is THE WINNER!</li>
+        </ul>
       </div>
-
+    </div>
+    <div id="player1">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2>PLAYER 1</h2>
+        </div>
+        <div class="panel body">
+          <h4>CURRENT ROLL</h4>
+          <p id="score"></p>
+        </div>
+        <div class="panel-footer" id="total">
+          <h4>TOTAL SCORE</h4>
+          <p id="roll1"></p>
+        </div>
+      </div>
+      <div>
+        <button type="button" name="button" class="btn btn-info" onclick="roll()">ROLL DICE</button>
+        <button type="button" name="button" class="btn btn-info" id="hold">HOLD</button>
+        <button type="button" name="button" class="btn btn-info" id="throw1">PASS DICE</button>
+      </div>
+    </div>
+    <div id="player2">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2>PLAYER 2</h2>
+        </div>
+        <div class="panel body">
+          <h4>CURRENT ROLL</h4>
+          <p id="score2"></p>
+        </div>
+        <div class="panel-footer" id="total2">
+          <h4>TOTAL SCORE</h4>
+          <p id="roll2"></p>
+        </div>
+      </div>
+      <div class="button2">
+        <button type="button" name="button" class="btn btn-info" onclick="roll2()">ROLL DICE</button>
+        <button type="button" name="button" class="btn btn-info" id="hold2">HOLD</button>
+        <button type="button" name="button" class="btn btn-info" id="throw2">PASS DICE</button>
+      </div>
+    </div>
+    <div class="alert alert-warning" role="alert" id="alert1">
+      <h2>SORRY BUT YOU HAVE LOST.</h2>
+      <button type="button" name="button" class="btn btn-danger" id="pass1">PASS MOUSE TO PLAYER 2</button>
+    </div>
+    <div class="alert alert-warning alert-dismissable" role="alert" id="alert2">
+      <h2>SORRY BUT YOU HAVE LOST.</h2>
+      <button type="button" name="button" class="btn btn-danger" id="pass2">PASS MOUSE TO PLAYER 1</button>
+    </div>
+    <div class="panel panel-primary" id="win1">
+      <div class="panel-heading">
+        <h3>CONGRATULATIONS PLAYER 1 WON THE GAME</h3>
+      </div>
+      <div class="panel-body">
+        <img src="https://media.giphy.com/media/3o6fJ1BM7R2EBRDnxK/giphy.gif" alt="congrats gif">
+        <button type="button" name="button" class="btn btn-primary" id="restart">RESTART GAME</button>
+      </div>
+    </div>
+    <div class="panel panel-primary" id="win2">
+      <div class="panel-heading">
+        <h3>CONGRATULATIONS PLAYER 2 WON THE GAME</h3>
+      </div>
+      <div class="panel-body">
+        <img src="https://media.giphy.com/media/3o6fJ1BM7R2EBRDnxK/giphy.gif" alt="congrats gif">
+        <button type="button" name="button" class="btn btn-primary" id="restart" value="reload">RESTART GAME</button>
+      </div>
     </div>
   </body>
   <footer>
