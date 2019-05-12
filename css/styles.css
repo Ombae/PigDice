@@ -1,3 +1,19 @@
 body{
-  background-color: red;
+  font-family: 'Playfair Display', serif;
+}
+.container{
+  display: inline-block;
+  text-align: center;
+}
+.col-sm-6{
+  display: inline-block;
+}
+.img1{
+  height: 100px;
+  width: auto;
+}
+h1{
+  color: #ff3a3a;
+  text-transform: uppercase;
+  text-shadow: 3px 0 grey;
 }
