@@ -8,6 +8,17 @@ body{
 .text-danger{
   text-shadow: 2px 0 grey;
 }
+#start{
+  font-size: 35px;
+  color: blue;
+}
+#instruct{
+  color: blue;
+  font-size: 28px;
+}
+.panel-body ul li{
+  list-style-type: none;
+}
 #instructions,#total,#total2,#player2,#alert1,#alert2,#win1,#win2,#throw1,#throw2{
   display: none;
 }
