@@ -7,6 +7,8 @@ body{
 }
 .text-danger{
   text-shadow: 2px 0 grey;
+  background-color: black;
+  margin-bottom: 5%;
 }
 #start{
   font-size: 35px;
@@ -33,6 +35,6 @@ a:hover{
   color: white;
 }
 footer{
-  margin-top: 20%;
+  margin-top: 25%;
   text-align: center;
 }
