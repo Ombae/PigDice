@@ -1,5 +1,6 @@
 body{
   font-family: 'Playfair Display', serif;
+  background-color: #cdcdcd;
 }
 .container{
   text-align: center;
@@ -19,8 +20,8 @@ a:hover{
   text-decoration:none;
   background: #EF5350;
   color: white;
-
+}
 footer{
-  margin-top: 10%;
+  margin-top: 20%;
   text-align: center;
 }
