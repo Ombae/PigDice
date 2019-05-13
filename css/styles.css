@@ -17,12 +17,18 @@ body{
 #instruct{
   color: blue;
   font-size: 28px;
+  display: block;
+  margin-bottom: 1%;
 }
 .panel-body ul li{
   list-style-type: none;
 }
 #instructions,#total,#total2,#player2,#alert1,#alert2,#win1,#win2,#throw1,#throw2{
   display: none;
+}
+#player1, #player2{
+  display: inline-block;
+  margin: 5%;
 }
 a{
   text-decoration: none;
@@ -35,6 +41,6 @@ a:hover{
   color: white;
 }
 footer{
-  margin-top: 25%;
+  margin-top: 15%;
   text-align: center;
 }
