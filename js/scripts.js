@@ -10,15 +10,15 @@ function roll() {
 
   if (totalScore >= 100) {
     $(document).ready(function() {
-      $("#player1").toggle(2000);
-      $("#player1").fadeOut(2000);
-      $("#win1").slideDown(2000);
+      $("#player1").toggle(1800);
+      $("#player1").fadeOut(1800);
+      $("#win1").slideDown(1800);
     })
   } else {
     if (dice == 1) {
       $(document).ready(function() {
         output.length = 0;
-        $("#player1").fadeOut(2000);
+        $("#player1").fadeOut(1800);
         $("#alert1").fadeIn();
       })
     } else {
@@ -35,13 +35,13 @@ function roll2() {
   document.getElementById("roll2").innerHTML = newScore;
   if (newScore >= 100) {
     $(document).ready(function() {
-      $("#player2").fadeOut(2000);
-      $("#win2").slideDown(2000);
+      $("#player2").fadeOut(1800);
+      $("#win2").slideDown(1800);
     })
   } else {
     if (dice2 == 1) {
       $(document).ready(function() {
-        $("#player2").fadeOut(2000);
+        $("#player2").fadeOut(1800);
         $("#alert2").fadeIn();
       })
     } else {
@@ -61,36 +61,36 @@ function start2() {
 //user interface logic
 $(document).ready(function() {
   $("#hold").click(function() {
-    $("#total").fadeIn(2000);
-    $("#throw1").fadeIn(2000);
+    $("#total").fadeIn(1800);
+    $("#throw1").fadeIn(1800);
   })
   $("#instruct").click(function() {
-    $("#instructions").toggle(2000);
+    $("#instructions").toggle(1800);
   })
   $("#hold2").click(function() {
-    $("#total2").fadeIn(2000);
-    $("#throw2").fadeIn(2000);
+    $("#total2").fadeIn(1800);
+    $("#throw2").fadeIn(1800);
   })
   $("#pass1").click(function() {
-    $("#alert1").fadeOut(2000);
-    $("#player2").toggle(2000);
+    $("#alert1").fadeOut(1800);
+    $("#player2").toggle(1800);
   })
   $("#pass2").click(function() {
-    $("#alert2").toggle(2000);
-    $("#player2").toggle(2000);
+    $("#alert2").toggle(1800);
+    $("#player2").toggle(1800);
   })
   $("#restart").click(function() {
-    $("#alert1").fadeOut(2000);
-    $("#player1").fadeIn(2000);
+    $("#alert1").fadeOut(1800);
+    $("#player1").fadeIn(1800);
   });
 
   $("#throw1").click(function() {
-    $("#player1").fadeOut(2000);
-    $("#player2").slideDown(2000);
+    $("#player1").fadeOut(1800);
+    $("#player2").slideDown(1800);
   });
 
   $("#throw2").click(function() {
-    $("#player2").fadeOut(2000);
-    $("#player1").slideDown(2000);
+    $("#player2").fadeOut(1800);
+    $("#player1").slideDown(1800);
   });
 });
